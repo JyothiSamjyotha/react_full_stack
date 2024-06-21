@@ -7,6 +7,7 @@ import Update from './components/Update';
 import Read from './components/Read';
 
 import { BrowserRouter as Router ,Routes,Route } from 'react-router-dom';
+import HeadTop from './components/HeadTop';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route exact path = "/all" element = {<Read/>}/>
         <Route exact path = "/:id" element = {<Update/>}/>
       </Routes>
+      <HeadTop/>
     </Router>
     </>
   );
